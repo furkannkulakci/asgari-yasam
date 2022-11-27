@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Asgari Yaşam</title>
+  </head>
+  <body class="body">
+    <!-- Header -->
+    <header>
+      <div class="header">
+        <img width="50px" src="image/logo.png" alt="logo" />
+        <h1></h1>
+      </div>
+    </header>
+
+    <!-- Alert Cost -->
+    <div class="alert-cost">
+      <div class="msg-cost">
+        <div class="close-cost-alert">
+          <a href=""
+            ><i class="fa-solid fa-person-running alert-man"></i>
+            <i class="fa-solid fa-door-open"></i
+          ></a>
+        </div>
+        <i style="margin-top: 30px" class="fa-solid fa-chess-pawn fa-2x"></i>
+        <h2 class="alert-title">Paracık Yetersiz...</h2>
+        <div class="expense-total" style="text-decoration: underline"></div>
+        <p class="alert-content">
+          Günün Tavsiyesi: <br />Porsiyon azaltmaya ne dersin.
+        </p>
+        <i class="fa-solid fa-credit-card credit-cost-alert"></i>
+      </div>
+    </div>
+
+    <!-- Alert Bill -->
+    <div class="alert">
+      <div class="msg">
+        <i class="fa-regular fa-face-grin-beam-sweat fa-2x"></i>
+        <h2 class="alert-title">Haydaaa...</h2>
+        <p class="alert-content">
+          Harcama yapmadan faturanı görmeye çalışmadın umarım
+        </p>
+        <div class="close-alert">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <section>
+      <div class="container">
+        <!-- About -->
+        <div class="about">
+          <h1>Asgari Yaşam</h1>
+          <div class="about-content">
+            <p>
+              2022 yılı asgari ücretini Cumhurbaşkanlığı Külliyesi açıkladı.
+              Resmi Gazete'de 2022 yılının asgari ücretinin 5500 lira 35 kuruş
+              olduğu yayımlandı. Bu veriler ile bir işçinin günlük ücreti ise
+              215 lira 70 kuruştur.
+            </p>
+            <img src="image/banner.png" alt="" />
+          </div>
+        </div>
+        <!-- Info -->
+        <div class="info">
+          <div class="info-inner">
+            <i class="fa-solid fa-computer-mouse info-mouse"></i>
+
+            <p>Faturayı görmek için</p>
+
+            <i class="fa-solid fa-rectangle-xmark info-close"></i>
+          </div>
+        </div>
+        <!-- Nav Top -->
+        <nav class="nav-top">
+          <ul id="menu">
+            <li class="edit-money">
+              <span class="money"></span> lira 35 kuruş
+            </li>
+            <li class="edit-icon"><i class="fa-solid fa-wallet"></i></li>
+          </ul>
+        </nav>
+        <!-- Products -->
+        <div class="main-content">
+          <div class="wrapper">
+            <div class="carts-wrap">
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/rent.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Kira Ödemesi</div>
+                    <div class="cart-price price">3000₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/bills.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Faturalar</div>
+                    <div class="cart-price price">1200₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/transport.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Ulaşım</div>
+                    <div class="cart-price price">600₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/money.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">2 Çocuk Harçlık</div>
+                    <div class="cart-price price">600₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner gold">
+                  <div class="cart-top">
+                    <img
+                      src="image/phone.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Apple iPhone 12 128 Gb Siyah
+                    </div>
+                    <div class="cart-price price">23475$</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Tefeci
+                        <i class="fa-solid fa-user-doctor"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner silver">
+                  <div class="cart-top">
+                    <img
+                      src="image/manda.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Manda Sütlü Yoğurt</div>
+                    <div class="cart-price price">75₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Lüks
+                        <i class="fa-solid fa-tags"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/ekmek.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">20 Adet Ekmek</div>
+                    <div class="cart-price price">80₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img src="image/sut.png" class="productimage" alt="image" />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Süt 4x1 L</div>
+                    <div class="cart-price price">99₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/yumurta.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Orta Boy Yumurta 30'lu
+                    </div>
+                    <div class="cart-price price">62₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/yogurt.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Tam Yağlı Yoğurt 1.5 Kg
+                    </div>
+                    <div class="cart-price price">29₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner silver">
+                  <div class="cart-top">
+                    <img
+                      src="image/hurma.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Hurma Medine Kg</div>
+                    <div class="cart-price price">150₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Lüks
+                        <i class="fa-solid fa-tags"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner gold">
+                  <div class="cart-top">
+                    <img src="image/pc.png" class="productimage" alt="image" />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Macbook Air M1 8Gb 13.3inc
+                    </div>
+                    <div class="cart-price price">18280₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Tefeci
+                        <i class="fa-solid fa-user-doctor"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/peynir.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Tam Yağlı Beyaz Peynir 1000 G
+                    </div>
+                    <div class="cart-price price">99₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/kasar.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Tam Yağlı Taze Kaşar Peyniri 700 G
+                    </div>
+                    <div class="cart-price price">92₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/zeytin.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Light Zeytin 430 G</div>
+                    <div class="cart-price price">45₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/butter.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Tereyağı 250 Gr</div>
+                    <div class="cart-price price">36₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner gold">
+                  <div class="cart-top">
+                    <img src="image/tv.png" class="productimage" alt="image" />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">LG 55inc 139 CM</div>
+                    <div class="cart-price price">14144₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Tefeci
+                        <i class="fa-solid fa-user-doctor"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner silver">
+                  <div class="cart-top">
+                    <img src="image/bal.png" class="productimage" alt="image" />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Kestane Balı 460 G</div>
+                    <div class="cart-price price">268₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Lüks
+                        <i class="fa-solid fa-tags"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/aycicek.jpg"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Ayçiçek Yağı Pet 3 L
+                    </div>
+                    <div class="cart-price price">119₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/zeytinyagı.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Sızma Zeytinyağı 2 L
+                    </div>
+                    <div class="cart-price price">180₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/kiyma.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Dana Kıyma Paket 500 G
+                    </div>
+                    <div class="cart-price price">79₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img src="image/et.png" class="productimage" alt="image" />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Dana Yemeklik Kuşbaşı 300 G
+                    </div>
+                    <div class="cart-price price">45₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner silver">
+                  <div class="cart-top">
+                    <img
+                      src="image/yulaf.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Yulaf Ezmesi 500 G</div>
+                    <div class="cart-price price">23₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Lüks
+                        <i class="fa-solid fa-tags"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner gold">
+                  <div class="cart-top">
+                    <img src="image/ps.png" class="productimage" alt="image" />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">SONY Playstation 5</div>
+                    <div class="cart-price price">19698₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Tefeci
+                        <i class="fa-solid fa-user-doctor"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/tavuk.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Piliç Bonfile Göğüs 750 G
+                    </div>
+                    <div class="cart-price price">80₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/balik.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      Levrek 2 Adet 600/800 gr
+                    </div>
+                    <div class="cart-price price">150₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/makarna.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">
+                      5 Adet Makarna 500 G
+                    </div>
+                    <div class="cart-price price">72₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product -->
+              <div class="cart-item">
+                <div class="cart-inner">
+                  <div class="cart-top">
+                    <img
+                      src="image/hiyar.png"
+                      class="productimage"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="cart-bottom product">
+                    <div class="cart-title productname">Hıyar 1 Kg Paket</div>
+                    <div class="cart-price price">20₺</div>
+                    <div class="cart-button">
+                      <button class="addtocart">
+                        Öde
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bill -->
+        <div id="bill" class="bill">
+          <button id="cross-bill" class="cross-bill fa-2x">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h1>Giderler!</h1>
+          <p class="mtn">
+            Yatırılan 5 bin 500 lira 35 kuruştan
+            <span id="expense"></span> lira harcandı,
+            <span id="remiender"></span> lira 35 kuruş kaldı.
+          </p>
+          <div class="bill-content">
+            <div class="bill-header">
+              <ul>
+                <li><h2>Görsel</h2></li>
+                <li><h2>Ürün</h2></li>
+                <li><h2>Fiyat</h2></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bill-total">
+            <div class="bill-header">
+              <ul>
+                <li></li>
+                <li><h2 class="to">Toplam</h2></li>
+                <li>
+                  <h2 style="display: inline-block" class="total-cost"></h2>
+                  ₺
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav Bottom -->
+        <nav class="nav-bottom">
+          <div class="menu-bottom">
+            <p>
+              <i class="fa-solid fa-receipt"></i> Aylık Gider<span
+                id="bill-count"
+                class="bottom-number"
+                >0</span
+              >
+            </p>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
